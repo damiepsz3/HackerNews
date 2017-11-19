@@ -7,6 +7,7 @@ import { ApolloProvider } from 'react-apollo'
 import { ApolloClient } from 'apollo-client'
 import { HttpLink } from 'apollo-link-http'
 import { InMemoryCache } from 'apollo-cache-inmemory'
+import { BrowserRouter } from 'react-router-dom'
 
 const httpLink = new HttpLink({ uri: 'https://api.graph.cool/simple/v1/cja70kbfz0vtn0125zvluiqu5' })
 
@@ -16,8 +17,10 @@ const client = new ApolloClient({
 })
 
 ReactDOM.render(
-  <ApolloProvider client={client}>
-    <Home />
-  </ApolloProvider>
+  <BrowserRouter>
+    <ApolloProvider client={client}>
+      <Home />
+    </ApolloProvider>
+  </BrowserRouter>
   , document.getElementById('root'));
 registerServiceWorker();
