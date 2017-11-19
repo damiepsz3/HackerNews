@@ -1,0 +1,3 @@
+targets:
+  test: shared-eu-west-1/cja70kbfz0vtn0125zvluiqu5
+  default: test
