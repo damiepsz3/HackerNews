@@ -9,7 +9,7 @@ Following a tutorial from [https://www.howtographql.com/](HowToGraphQL)
 
 
 ## Usage
-In the project directory, you can run:
+In the client directory, you can run:
 
 ### `yarn start`
 
